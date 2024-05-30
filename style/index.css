@@ -1,0 +1,129 @@
+body{
+    background-color: #f0f0f0;
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: grey;
+    font-family: 'Trebuchet MS';
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio{
+    background-color: yellow;
+    color: white;
+    height: auto;
+    display: flex;
+    padding: 1%;
+}
+
+.containers{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+.containerbutton{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 50%;
+}
+
+.containerinfo{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 50%;
+    padding: 1%;
+}
+
+.calc, .conv{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    color: white;
+    font-size: 30px;
+}
+
+.calc {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    border: none;
+}
+
+.conv {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    border: none;
+}
+
+.calc img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    border-radius: 35%;
+    transition: opacity 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.conv img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    border-radius: 35%;
+    transition: opacity 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.calc img:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.conv img:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.info{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+.github{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
