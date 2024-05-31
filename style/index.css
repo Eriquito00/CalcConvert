@@ -1,22 +1,11 @@
-@media screen and (max-width: 1000px) {
-    .containerbutton, .containerinfo {
-        flex-direction: column;
-    }
-    .containerinfo {
-        order: 2;
-    }
-    .containerbutton {
-        order: 1;
-    }
-}
-body{
+body {
     background-color: #f0f0f0;
     font-family: 'Trebuchet MS';
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: #333;
     color: white;
     text-align: center;
@@ -26,12 +15,7 @@ header{
     align-items: center;
 }
 
-body{
-    background-color: grey;
-    font-family: 'Trebuchet MS';
-}
-
-footer{
+footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -41,7 +25,7 @@ footer{
     align-items: center;
 }
 
-.inicio{
+.inicio {
     background-color: yellow;
     color: white;
     height: auto;
@@ -49,23 +33,23 @@ footer{
     padding: 1%;
 }
 
-.containers{
+.containers {
     display: flex;
     justify-content: space-between;
     height: auto;
     width: 100%;
 }
 
-.containerbutton{
+.containerbutton {
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     height: auto;
     width: 50%;
 }
 
-.containerinfo{
+.containerinfo {
     background-color: greenyellow;
     display: flex;
     flex-direction: column;
@@ -75,17 +59,21 @@ footer{
     padding: 1%;
 }
 
-.calc, .conv{
+.calc, .conv {
     width: 50%;
     height: auto;
     font-size: 30px;
     flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
 }
 
 .calc {
     position: relative;
     width: 50%;
-    height: auto;
     padding: 0;
     border: none;
     background: linear-gradient(45deg, #ff8800, #333, #333, #ff8800);
@@ -111,13 +99,12 @@ footer{
 
 .conv {
     width: 50%;
-    height: auto;
     padding: 0;
     border: none;
     background-color: purple;
 }
 
-.info{
+.info {
     background-color: aqua;
     display: flex;
     justify-content: space-between;
@@ -125,8 +112,24 @@ footer{
     width: 100%;
 }
 
-.github{
+.github {
     color: white;
     text-align: center;
     text-decoration: none;
+}
+
+/* Media query for screens less than 1000px wide */
+@media (max-width: 1000px) {
+    .containers {
+        flex-direction: column;
+    }
+
+    .containerbutton, .containerinfo {
+        width: 100%;
+    }
+
+    .calc, .conv {
+        height: 200px;
+        width: 100%;
+    }
 }
