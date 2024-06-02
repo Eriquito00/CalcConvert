@@ -1,30 +1,3 @@
-body {
-    background-color: white;
-    font-family: 'Trebuchet MS';
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: black;
-    color: white;
-    text-align: center;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .inicio {
     background-color: yellow;
     color: white;
@@ -178,40 +151,6 @@ footer {
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 500px;
-}
-
-.img2{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.github {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Estilo para la barra de desplazamiento */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-/* Estilo para el track (la parte que no se mueve) */
-::-webkit-scrollbar-track {
-    background: black;
-}
-
-/* Estilo para el handle (la parte que se mueve) */
-::-webkit-scrollbar-thumb {
-    background: white;
-}
-
-/* Estilo para el handle al pasar el mouse */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
 }
 
 /* El cuadro mide menos de 1000px */
