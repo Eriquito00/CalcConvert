@@ -1,11 +1,42 @@
+.calculadora{
+    display: flex;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+}
+
 .basecalc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: 25px;
+    width: 450px;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 20px;
+}
+
+.operaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 25px;
+    width: 450px;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 20px;
+}
+
+.mecalc{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     margin: 25px;
     width: 50%;
-    height: 750px;
+    height: auto;
     border-radius: 25px;
     box-shadow: black 0px 0px 20px;
 }
@@ -14,57 +45,103 @@
     width: 90%;
     height: 15%;
     border-color: black;
-    font-size: 50px;
+    font-size: 80px;
     text-align: right;
-    background-color: orange;
+    background-color: white;
     border-radius: 15px;
     margin: 20px;
 }
 
 .teclado{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
     justify-content: center;
     align-items: center;
     margin: 20px;
     width: 90%;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 15px;
 }
 
-.numscalc{
+.teclascalc{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 10%;
+    width: 75px;
+    height: 75px;
     font-size: 30px;
     border-radius: 15px;
     margin: 10px;
-    background-color: orange;
+    background-color: black;
+    color: white;
 }
 
-.operadorcalc{
+.logocalc{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 10%;
+    width: 75px;
+    height: 75px;
     font-size: 30px;
     border-radius: 15px;
     margin: 10px;
-    background-color: lightblue;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-.funcionescalc{
+.returnhome{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 0;
+    border: none;
+    background: linear-gradient(0deg,  black, black, white, black, black, black, black, white, black, black);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    box-shadow: black 0px 0px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.returnhome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 10%;
-    font-size: 30px;
-    border-radius: 15px;
-    margin: 10px;
-    background-color: lightgreen;
+}
+
+.returnhome:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .calculadora {
+        flex-direction: column;
+    }
+    .mecalc {
+        width: auto;
+        height: auto;
+    }
 }

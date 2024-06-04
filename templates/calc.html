@@ -14,28 +14,44 @@
     <h1 style="font-size: 50px; text-align: center;">CalcConvert</h1>
 </header>
 <body>
-    <div class="basecalc">
-        <input class="inputcalc" type="text" id="display" readonly>
-        <div class="teclado">
-            <button class="numscalc" onclick="num1();">1</button>
-            <button class="numscalc" onclick="num2();">2</button>
-            <button class="numscalc" onclick="num3();">3</button>
-            <button class="numscalc" onclick="num4();">4</button>
-            <button class="numscalc" onclick="num5();">5</button>
-            <button class="numscalc" onclick="num6();">6</button>
-            <button class="numscalc" onclick="num7();">7</button>
-            <button class="numscalc" onclick="num8();">8</button>
-            <button class="numscalc" onclick="num9();">9</button>
-            <button class="numscalc" onclick="num0();">0</button>
-            <button class="operadorcalc" onclick="suma();">+</button>
-            <button class="operadorcalc" onclick="rest();">-</button>
-            <button class="operadorcalc" onclick="mult();">x</button>
-            <button class="operadorcalc" onclick="divi();">÷</button>
-            <button class="funcionescalc" onclick="borranum();">C</button>
-            <button class="funcionescalc" onclick="borrartodo();">CE</button>
-            <button class="funcionescalc" onclick="result();">=</button>
+        <div class="calculadora">
+            <div class="basecalc">
+                <input class="inputcalc" type="text" id="display" readonly>
+                <div class="teclado">
+                    <button class="teclascalc" onclick="borrartodo();">CE</button>
+                    <button class="teclascalc" onclick="borranum();">C</button>
+                    <button class="teclascalc" onclick="porc();">%</button>
+                    <button class="teclascalc" onclick="divi();">÷</button>
+                    <button class="teclascalc" onclick="num7();">7</button>
+                    <button class="teclascalc" onclick="num8();">8</button>
+                    <button class="teclascalc" onclick="num9();">9</button>
+                    <button class="teclascalc" onclick="mult();">x</button>
+                    <button class="teclascalc" onclick="num4();">4</button>
+                    <button class="teclascalc" onclick="num5();">5</button>
+                    <button class="teclascalc" onclick="num6();">6</button>
+                    <button class="teclascalc" onclick="rest();">-</button>
+                    <button class="teclascalc" onclick="num1();">1</button>
+                    <button class="teclascalc" onclick="num2();">2</button>
+                    <button class="teclascalc" onclick="num3();">3</button>
+                    <button class="teclascalc" onclick="suma();">+</button>
+                    <button class="teclascalc" onclick="num0();">0</button>
+                    <button class="teclascalc" onclick="coma();">,</button>
+                    <button class="teclascalc" onclick="result();">=</button>
+                    <img class="logocalc" src="../img/logoB.png" alt="Convert">
+                </div>
+            </div>
+            <div class="operaciones">
+                <div>
+                    <h2>Operaciones</h2>
+                    <output id="result" style="background-color: whitesmoke; "></output>
+                </div>
+            </div>
+            <div class="mecalc">
+                <h2>Calculadora</h2>
+                <p>Calculadora básica con las operaciones básicas de suma, resta, multiplicación y división.</p>
+                <a href="../index.html" class="returnhome">Home</a>
+            </div>
         </div>
-    </div>
 </body>
 <footer>
     <a href="https://github.com/Eriquito00">

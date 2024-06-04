@@ -48,6 +48,11 @@ function num0() {
     display.value = display.value + '0';
 }
 
+function coma() {
+    var display = document.getElementById('display');
+    display.value = display.value + ',';
+}
+
 function suma() {
     var display = document.getElementById('display');
     display.value = display.value + '+';
@@ -66,6 +71,11 @@ function mult() {
 function divi() {
     var display = document.getElementById('display');
     display.value = display.value + '÷';
+}
+
+function porc() {
+    var display = document.getElementById('display');
+    display.value = display.value + '%';
 }
 
 function borranum() {
