@@ -1,8 +1,11 @@
 .calculadora{
     display: flex;
+    flex-direction: row; /* Mantiene los elementos en fila por defecto */
     background-color: white;
-    height: 50%;
+    height: auto;
     width: 100%;
+    justify-content: flex-start; /* Ajusta los elementos al inicio (izquierda) */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
 }
 
 .basecalc{
@@ -35,8 +38,8 @@
     align-items: center;
     background-color: white;
     margin: 25px;
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     box-shadow: black 0px 0px 20px;
 }
@@ -136,12 +139,11 @@
     opacity: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .calculadora {
         flex-direction: column;
     }
-    .mecalc {
-        width: auto;
-        height: auto;
+    .basecalc, .operaciones, .mecalc {
+        justify-content: space-between;
     }
 }
