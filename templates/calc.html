@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="../style/calc.css">
+<script src="../scripts/calc.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +14,59 @@
     <h1 style="font-size: 50px; text-align: center;">CalcConvert</h1>
 </header>
 <body>
-    <div class="containerbuild">
-        <img class="imagenbuild" src="../img/logoB.png" alt="CalcConvert">
-        <h1>⚒️🛠️ Building this page 🛠️⚒️</h1>
+    <div class="calculadora">
+        <div class="basecalc">
+            <input class="inputcalc" type="text" id="display" readonly>
+            <div class="teclado">
+                <button class="teclascalc" onclick="borranum();">CE</button>
+                <button class="teclascalc" onclick="borrartodo();">C</button>
+                <button class="teclascalc" onclick="porc();">%</button>
+                <button class="teclascalc" onclick="divi();">÷</button>
+                <button class="teclascalc" onclick="num7();">7</button>
+                <button class="teclascalc" onclick="num8();">8</button>
+                <button class="teclascalc" onclick="num9();">9</button>
+                <button class="teclascalc" onclick="mult();">x</button>
+                <button class="teclascalc" onclick="num4();">4</button>
+                <button class="teclascalc" onclick="num5();">5</button>
+                <button class="teclascalc" onclick="num6();">6</button>
+                <button class="teclascalc" onclick="rest();">-</button>
+                <button class="teclascalc" onclick="num1();">1</button>
+                <button class="teclascalc" onclick="num2();">2</button>
+                <button class="teclascalc" onclick="num3();">3</button>
+                <button class="teclascalc" onclick="suma();">+</button>
+                <button class="teclascalc" onclick="num0();">0</button>
+                <button class="teclascalc" onclick="coma();">,</button>
+                <button class="teclascalc" onclick="result();">=</button>
+                <img class="logocalc" src="../img/logoB.png" alt="Convert">
+            </div>
+        </div>
+        <div class="operaciones">
+            <div>
+                <h2>Operaciones</h2>
+                <output id="result" style="background-color: whitesmoke; "></output>
+            </div>
+        </div>
+        <div class="mecalc">
+            <h2>Calculadora</h2>
+            <div class="textexplicacalc">
+                <p>Calculadora básica con las operaciones básicas de suma, resta, multiplicación y división.</p>
+                <h3>Ejemplo de uso</h3>
+                <p>Imagina que quieres sumar 23 y 45:</p>
+                <ol>
+                    <li>Presiona 2 y luego 3 en los botones numéricos.</li>
+                    <li>Presiona el botón +.</li>
+                    <li>Presiona 4 y luego 5.</li>
+                    <li>Presiona el botón =.</li>
+                    <li>El resultado 68 aparecerá en la pantalla.</li>
+                </ol>
+                <h3>Informacion adicional</h3>
+                <ul>
+                    <li>En la sección "Operaciones", podrás ver un historial de las operaciones que has realizado.</li>
+                    <li>Si en cualquier momento quieres volver a la página principal, haz clic en el enlace Home.</li>
+                </ul>
+            </div>
+            <a href="../index.html" class="returnhome">Home</a>
+        </div>
     </div>
 </body>
 <footer>

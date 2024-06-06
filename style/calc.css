@@ -1,0 +1,210 @@
+.calculadora{
+    display: flex;
+    flex-direction: row; /* Mantiene los elementos en fila por defecto */
+    background-color: white;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start; /* Ajusta los elementos al inicio (izquierda) */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
+}
+
+.basecalc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: 25px;
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 20px;
+}
+
+.operaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 20px;
+}
+
+.mecalc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 20px;
+}
+
+.inputcalc{
+    width: 90%;
+    height: 15%;
+    border-color: black;
+    font-size: 80px;
+    text-align: right;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.teclascalc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.logocalc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.returnhome{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 0;
+    border: none;
+    background: linear-gradient(0deg,  black, black, white, black, black, black, black, white, black, black);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    box-shadow: black 0px 0px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.returnhome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.returnhome:hover::before {
+    opacity: 1;
+}
+
+.textexplicacalc{
+    font-size: 15px;
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 900px){
+    .basecalc, .operaciones, .mecalc{
+        width: 100%;
+        height: 100%;
+    }
+    .teclascalc{
+        width: 85%;
+        height: 75px;
+        font-size: 30px;
+    }
+    .logocalc{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+@media (min-width: 900px){
+    .calculadora{
+        flex-direction: row;
+    }
+    .basecalc{
+        width: calc(50% - 20px);
+        height: 50%;
+        margin: 10px;
+    }
+    .operaciones{
+        width: calc(50% - 20px);
+        height: auto;
+        margin: 10px;
+    }
+    .mecalc{
+        width: calc(100% - 20px);
+        height: 100%;
+        margin: 10px;
+    }
+    .teclascalc{
+        width: 85%;
+        height: 75px;
+        font-size: 30px;
+    }
+}
+@media (min-width: 1200px){
+    .calculadora{
+        flex-direction: row;
+    }
+    .basecalc{
+        width: calc(40% - 20px);
+        height: auto;
+        margin: 10px;
+    }
+    .operaciones{
+        width: calc(30% - 20px);
+        height: auto;
+        margin: 10px;
+    }
+    .mecalc{
+        width: calc(30% - 20px);
+        height: auto;
+        margin: 10px;
+    }
+}

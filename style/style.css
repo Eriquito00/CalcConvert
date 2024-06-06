@@ -48,6 +48,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
 
 /* Estilo para la barra de desplazamiento */
