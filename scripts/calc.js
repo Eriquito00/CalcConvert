@@ -50,32 +50,57 @@ function num0() {
 
 function coma() {
     const display = document.getElementById('display');
-    display.value = display.value + ',';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    const lastNumber = display.value.split(/[\+\-\x\÷\%]/).pop();
+    if (display.value !== '' && !lastNumber.includes(',')) {
+        display.value = display.value + ',';
+    }
 }
 
 function suma() {
     const display = document.getElementById('display');
-    display.value = display.value + '+';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    if (display.value !== '' && !operators.includes(lastChar)) {
+        display.value = display.value + '+';
+    }
 }
 
 function rest() {
     const display = document.getElementById('display');
-    display.value = display.value + '-';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    if (display.value !== '' && !operators.includes(lastChar)) {
+        display.value = display.value + '-';
+    }
 }
 
 function mult() {
     const display = document.getElementById('display');
-    display.value = display.value + 'x';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    if (display.value !== '' && !operators.includes(lastChar)) {
+        display.value = display.value + 'x';
+    }
 }
 
 function divi() {
     const display = document.getElementById('display');
-    display.value = display.value + '÷';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    if (display.value !== '' && !operators.includes(lastChar)) {
+        display.value = display.value + '÷';
+    }
 }
 
 function porc() {
     const display = document.getElementById('display');
-    display.value = display.value + '%';
+    const lastChar = display.value[display.value.length - 1];
+    const operators = ['+', '-', 'x', '÷', '%'];
+    if (display.value !== '' && !operators.includes(lastChar)) {
+        display.value = display.value + '%';
+    }
 }
 
 function borranum() {
@@ -88,7 +113,9 @@ function borrartodo() {
     display.value = '';
 }
 
+const fs = require('fs');
+
 function result() {
     var display = document.getElementById('display');
-    display.value = display.value + 'resultado';
+    return result = display.value;
 }
