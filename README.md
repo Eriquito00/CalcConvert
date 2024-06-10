@@ -1,6 +1,6 @@
 # CalcConvert
 
-Sobretodo tendremos que descargar toda la carpeta que se llama CalcConvert. Para poder usar la pagina web en html i css i poder hacer los calculos con python. Para abrir la pagina web entraremos al archivo que estara diractamente en el directorio del proyecto que sera el archivo index.html
+Sobretodo tendremos que descargar toda la carpeta que se llama CalcConvert. Para poder usar la pagina web en html i css i poder hacer los calculos con javascript. Para abrir la pagina web entraremos al archivo que estara diractamente en el directorio del proyecto que sera el archivo index.html
 
 # Informacion Importante
 
@@ -10,7 +10,7 @@ PARA QUE FUNCIONE EL CODIGO HACE FALTA DESCARGAR TODO EL PROYECTO.
 
 ![Ejemplo de pez](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/html.png)
 ![Ejemplo de pez](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/css.png)
-![Ejemplo de pez](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/python.png)
+![Ejemplo de pez](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/js.png)
 
 <div style="text-align:center;">
   <h2 style="text-align:center;">Support me</h2>
