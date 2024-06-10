@@ -147,6 +147,10 @@
     margin-left: 20px;
 }
 
+.operationHistory{
+
+}
+
 @media (max-width: 900px){
     .basecalc, .operaciones, .mecalc{
         width: 100%;

@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="../style/style.css">
-<link rel="stylesheet" href="../style/calc.css">
-<script src="../scripts/calc.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalcConvert</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/calc.css">
     <link rel="icon" href="../img/logoB.png">
+    <script src="../scripts/calc.js" defer></script>
 </head>
-<header>
-    <img src="../img/logoN.png" alt="CalcConvert" style="width: 75px; height: 75px; position: absolute; left: 10px;">
-    <h1 style="font-size: 50px; text-align: center;">CalcConvert</h1>
-</header>
 <body>
+    <header>
+        <img src="../img/logoN.png" alt="CalcConvert" style="width: 75px; height: 75px; position: absolute; left: 10px;">
+        <h1 style="font-size: 50px; text-align: center;">CalcConvert</h1>
+    </header>
     <div class="calculadora">
         <div class="basecalc">
             <input class="inputcalc" type="text" id="display" readonly>
             <div class="teclado">
-                <button class="teclascalc" onclick="borranum();">CE</button>
-                <button class="teclascalc" onclick="borrartodo();">C</button>
-                <button class="teclascalc" onclick="porc();">%</button>
-                <button class="teclascalc" onclick="divi();">÷</button>
-                <button class="teclascalc" onclick="num7();">7</button>
-                <button class="teclascalc" onclick="num8();">8</button>
-                <button class="teclascalc" onclick="num9();">9</button>
-                <button class="teclascalc" onclick="mult();">x</button>
-                <button class="teclascalc" onclick="num4();">4</button>
-                <button class="teclascalc" onclick="num5();">5</button>
-                <button class="teclascalc" onclick="num6();">6</button>
-                <button class="teclascalc" onclick="rest();">-</button>
-                <button class="teclascalc" onclick="num1();">1</button>
-                <button class="teclascalc" onclick="num2();">2</button>
-                <button class="teclascalc" onclick="num3();">3</button>
-                <button class="teclascalc" onclick="suma();">+</button>
-                <button class="teclascalc" onclick="num0();">0</button>
-                <button class="teclascalc" onclick="coma();">,</button>
-                <button class="teclascalc" onclick="result();">=</button>
+                <button class="teclascalc" onclick="deleteLast();">CE</button>
+                <button class="teclascalc" onclick="clearAll();">C</button>
+                <button class="teclascalc" onclick="appendOperator('%');">%</button>
+                <button class="teclascalc" onclick="appendOperator('÷');">÷</button>
+                <button class="teclascalc" onclick="appendNumber('7');">7</button>
+                <button class="teclascalc" onclick="appendNumber('8');">8</button>
+                <button class="teclascalc" onclick="appendNumber('9');">9</button>
+                <button class="teclascalc" onclick="appendOperator('x');">x</button>
+                <button class="teclascalc" onclick="appendNumber('4');">4</button>
+                <button class="teclascalc" onclick="appendNumber('5');">5</button>
+                <button class="teclascalc" onclick="appendNumber('6');">6</button>
+                <button class="teclascalc" onclick="appendOperator('-');">-</button>
+                <button class="teclascalc" onclick="appendNumber('1');">1</button>
+                <button class="teclascalc" onclick="appendNumber('2');">2</button>
+                <button class="teclascalc" onclick="appendNumber('3');">3</button>
+                <button class="teclascalc" onclick="appendOperator('+');">+</button>
+                <button class="teclascalc" onclick="appendNumber('0');">0</button>
+                <button class="teclascalc" onclick="appendComma();">.</button>
+                <button class="teclascalc" onclick="calculateResult();">=</button>
                 <img class="logocalc" src="../img/logoB.png" alt="Convert">
             </div>
         </div>
         <div class="operaciones">
             <div>
                 <h2>Operaciones</h2>
-                <output id="result" style="background-color: whitesmoke; "></output>
+                <div style="background-color: whitesmoke;">
+                    <pre id="history" class="operationHistory"></pre>
+                </div>
             </div>
         </div>
         <div class="mecalc">
@@ -59,7 +61,7 @@
                     <li>Presiona el botón =.</li>
                     <li>El resultado 68 aparecerá en la pantalla.</li>
                 </ol>
-                <h3>Informacion adicional</h3>
+                <h3>Información adicional</h3>
                 <ul>
                     <li>En la sección "Operaciones", podrás ver un historial de las operaciones que has realizado.</li>
                     <li>Si en cualquier momento quieres volver a la página principal, haz clic en el enlace Home.</li>
@@ -68,11 +70,11 @@
             <a href="../index.html" class="returnhome">Home</a>
         </div>
     </div>
+    <footer>
+        <a href="https://github.com/Eriquito00">
+            <img class="imgGH" src="../img/github.png" alt="CalcConvert">
+        </a>
+        <p class="github">Created by: Eriquito00</p>
+    </footer>
 </body>
-<footer>
-    <a href="https://github.com/Eriquito00">
-        <img class="imgGH" src="../img/github.png" alt="CalcConvert">
-    </a>
-    <p class="github">Created by: Eriquito00</p>
-</footer>
 </html>
