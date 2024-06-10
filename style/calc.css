@@ -23,13 +23,23 @@
 .operaciones {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: white;
     margin: 25px;
     width: 100%;
     height: 100%;
     border-radius: 25px;
     box-shadow: black 0px 0px 20px;
+}
+
+.operationHistory{
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    text-align: center;
+    max-height: auto;
+    overflow-y: auto;
+    white-space: pre-wrap;
 }
 
 .mecalc{
@@ -147,14 +157,17 @@
     margin-left: 20px;
 }
 
-.operationHistory{
-
-}
-
 @media (max-width: 900px){
     .basecalc, .operaciones, .mecalc{
         width: 100%;
         height: 100%;
+    }
+    .operaciones{
+        width: 100%;
+        height: 500px;
+    }
+    .operationHistory{
+        max-height: 300px;
     }
     .teclascalc{
         width: 85%;
