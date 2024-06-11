@@ -54,7 +54,7 @@
     box-shadow: black 0px 0px 20px;
 }
 
-.inputcalc{
+.inputcalc {
     width: 90%;
     height: 15%;
     border-color: black;
@@ -63,6 +63,8 @@
     background-color: white;
     border-radius: 15px;
     margin: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .teclado{
