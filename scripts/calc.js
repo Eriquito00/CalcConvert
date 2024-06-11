@@ -11,7 +11,9 @@ function appendOperator(operator) {
     const display = getDisplay();
     const lastChar = display.value.slice(-1);
     const operators = ['+', '-', 'x', '÷', '%'];
-    if (display.value !== '' && !operators.includes(lastChar)) {
+    if (operator === '-' && display.value === '') {
+        display.value += operator;
+    } else if (display.value !== '' && !operators.includes(lastChar)) {
         display.value += operator;
     }
 }
