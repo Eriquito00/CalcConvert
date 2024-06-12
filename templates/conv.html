@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="../style/conv.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,146 @@
     <h1 style="font-size: 50px; text-align: center;">CalcConvert</h1>
 </header>
 <body>
-    <div class="containerbuild">
-        <img class="imagenbuild" src="../img/logoB.png" alt="CalcConvert">
-        <h1>⚒️🛠️ Building this page 🛠️⚒️</h1>
+    <div class="containerconv">
+        <div class="contmedidas">
+            <h1>Medidas</h1>
+            <input type="number" class="valorUser">
+            <select class="medidaInicial">
+                <option value="1">Kilometro</option>
+                <option value="2">Hectometro</option>
+                <option value="3">Decametro</option>
+                <option value="4">Metro</option>
+                <option value="5">Decimetro</option>
+                <option value="6">Centimetro</option>
+                <option value="7">Milimetro</option>
+                <option value="8">Legua</option>
+                <option value="9">Milla</option>
+                <option value="10">Furlong</option>
+                <option value="11">Cadena</option>
+                <option value="12">Rod</option>
+                <option value="13">Yarda</option>
+                <option value="14">Pie</option>
+                <option value="15">Pulgada</option>
+                <option value="16">Micrometro</option>
+            </select>
+            <input class="valorResultado" readonly>
+            <select class="medidaFinal">
+                <option value="1">Kilometro</option>
+                <option value="2">Hectometro</option>
+                <option value="3">Decametro</option>
+                <option value="4">Metro</option>
+                <option value="5">Decimetro</option>
+                <option value="6">Centimetro</option>
+                <option value="7">Milimetro</option>
+                <option value="8">Legua</option>
+                <option value="9">Milla</option>
+                <option value="10">Furlong</option>
+                <option value="11">Cadena</option>
+                <option value="12">Rod</option>
+                <option value="13">Yarda</option>
+                <option value="14">Pie</option>
+                <option value="15">Pulgada</option>
+                <option value="16">Micrometro</option>
+            </select>
+            <button class="botonconv">Calcular</button>
+        </div>
+        <div class="contpesos">
+            <h1>Pesos</h1>
+            <input type="number" class="valorUser">
+            <select class="medidaInicial">
+                <option value="1">Kilogramo</option>
+                <option value="2">Hectogramo</option>
+                <option value="3">Decagramo</option>
+                <option value="4">Gramo</option>
+                <option value="5">Decigramo</option>
+                <option value="6">Centigramo</option>
+                <option value="7">Miligramo</option>
+                <option value="8">Libra</option>
+                <option value="9">Onza</option>
+            </select>
+            <input class="valorResultado" readonly>
+            <select class="medidaFinal">
+                <option value="1">Kilogramo</option>
+                <option value="2">Hectogramo</option>
+                <option value="3">Decagramo</option>
+                <option value="4">Gramo</option>
+                <option value="5">Decigramo</option>
+                <option value="6">Centigramo</option>
+                <option value="7">Miligramo</option>
+                <option value="8">Libra</option>
+                <option value="9">Onza</option>
+            </select>
+            <button class="botonconv">Calcular</button>
+        </div>
+        <div class="conttemperatura">
+            <h1>Temperatura</h1>
+            <input type="number" class="valorUser">
+            <select class="medidaInicial">
+                <option value="1">Celsius</option>
+                <option value="2">Fahrenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+            <input class="valorResultado" readonly>
+            <select class="medidaFinal">
+                <option value="1">Celsius</option>
+                <option value="2">Fahrenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+            <button class="botonconv">Calcular</button>
+        </div>
+        <div class="contdinero">
+            <h1>Dinero</h1>
+            <input type="number" class="valorUser">
+            <select class="medidaInicial">
+                <option value="1">Dolar (USD)</option>
+                <option value="2">Euro (EUR)</option>
+                <option value="3">Yen (JPY)</option>
+                <option value="4">Libra (GBP)</option>
+                <option value="5">Dolar (AUD)</option>
+                <option value="6">Dolar (CAD)</option>
+                <option value="7">Franco (CHF)</option>
+                <option value="8">Yuan (CNH)</option>
+                <option value="9">Dolar (HKD)</option>
+                <option value="10">Dolar (NZD)</option>
+            </select>
+            <input class="valorResultado" readonly>
+            <select class="medidaFinal">
+                <option value="1">Dolar (USD)</option>
+                <option value="2">Euro (EUR)</option>
+                <option value="3">Yen (JPY)</option>
+                <option value="4">Libra (GBP)</option>
+                <option value="5">Dolar (AUD)</option>
+                <option value="6">Dolar (CAD)</option>
+                <option value="7">Franco (CHF)</option>
+                <option value="8">Yuan (CNH)</option>
+                <option value="9">Dolar (HKD)</option>
+                <option value="10">Dolar (NZD)</option>
+            </select>
+            <button class="botonconv">Calcular</button>
+        </div>
+    </div>
+    <div class="infoconv">
+        <h1 style="text-align: center;">Conversor de unidades</h1>
+        <div style="margin-left: 50px; margin-right: 50px;">
+            <p>Conversor de algunas unidades a nivel mundial como medidas, pesos, temperaturas y tipos de dinero.</p>
+            <h3>Ejemplo de uso</h3>
+            <p>Imagina que quieres pasar 10 kilosgramos a gramos:</p>
+            <ol>
+                <li>Pon en el conversor "medidas" el numero que quieres convertir.</li>
+                <li>Selecciona la unidad que es el numero.</li>
+                <li>Selecciona la en la que quieres transformar el numero.</li>
+                <li>Presiona el boton "Calcular" para recibir el resultado en el cuadro de resultado de "medidas".</li>
+            </ol>
+            <h3>Informacion adicional</h3>
+            <ul>
+                <li>Es posible que algunas medidas no esten en el conversor.</li>
+                <li>Es posible que el valor de algunas monedas no sea exacto debido a la tasa de cambio.</li>
+                <li>Algunos tipos de moneda no estan en el conversor, solo se encuentran las 10 mas usadas a nivel mundial.</li>
+            </ul>
+        </div>
+        <div>
+            <a href="../index.html" class="returnhome">Home</a>
+        </div>
     </div>
 </body>
 <footer>
