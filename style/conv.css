@@ -1,0 +1,100 @@
+.containerconv{
+    display: grid;
+    background-color: white;
+    grid-template-areas: "medidas pesos temperatura dinero";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+}
+
+.contmedidas, .contpesos, .conttemperatura, .contdinero{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    overflow:auto;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    border: 12px solid black;
+    box-shadow: 2px 2px 10px black;
+}
+
+.contmedidas{
+    background-color: white;
+    grid-area: medidas;
+}
+
+.contpesos{
+    background-color: white;
+    grid-area: pesos;
+}
+
+.conttemperatura{
+    background-color: white;
+    grid-area: temperatura;
+}
+
+.contdinero{
+    background-color: white;
+    grid-area: dinero;
+}
+
+.valorUser, .medidaInicial, .valorResultado, .medidaFinal, .botonconv{
+    margin: 10px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: auto;
+    font-size: 15px;
+    color: black;
+}
+
+.botonconv{
+    transition-duration: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.botonconv:hover{
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+}
+
+.infoconv{
+    width: auto;
+    height: auto;
+    border: 10px solid black;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px black;
+}
+
+@media (max-width: 1200px){
+    .containerconv{
+        grid-template-areas: "medidas pesos"
+        "temperatura dinero";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        overflow: auto;
+        font-size: 25px;
+    }
+    .valorUser, .medidaInicial, .valorResultado, .medidaFinal , .botonconv{
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px){
+    .containerconv{
+        grid-template-areas: "medidas"
+        "pesos"
+        "temperatura"
+        "dinero";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow: auto;
+        font-size: 30px;
+    }
+    .valorUser, .medidaInicial, .valorResultado, .medidaFinal, .botonconv{
+        font-size: 20px;
+    }
+}

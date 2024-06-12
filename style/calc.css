@@ -105,50 +105,6 @@
     text-decoration: none;
 }
 
-.returnhome{
-    position: relative;
-    display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-    padding: 0;
-    border: none;
-    background: linear-gradient(0deg,  black, black, white, black, black, black, black, white, black, black);
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    box-shadow: black 0px 0px 20px;
-    border-radius: 25px;
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.returnhome::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-image: url("../img/home.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.returnhome:hover::before {
-    opacity: 1;
-}
-
 .textexplicacalc{
     font-size: 15px;
     height: auto;
