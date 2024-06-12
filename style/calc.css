@@ -1,11 +1,11 @@
 .calculadora{
     display: flex;
-    flex-direction: row; /* Mantiene los elementos en fila por defecto */
+    flex-direction: row;
     background-color: white;
     height: auto;
     width: 100%;
-    justify-content: flex-start; /* Ajusta los elementos al inicio (izquierda) */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .basecalc{
