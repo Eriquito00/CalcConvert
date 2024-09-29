@@ -16,43 +16,43 @@
     <div class="containerconv">
         <div class="contmedidas">
             <h1>Medidas</h1>
-            <input type="number" class="valorUser">
-            <select class="medidaInicial">
-                <option value="1">Kilometro</option>
-                <option value="2">Hectometro</option>
-                <option value="3">Decametro</option>
-                <option value="4">Metro</option>
-                <option value="5">Decimetro</option>
-                <option value="6">Centimetro</option>
-                <option value="7">Milimetro</option>
-                <option value="8">Legua</option>
-                <option value="9">Milla</option>
-                <option value="10">Furlong</option>
-                <option value="11">Cadena</option>
-                <option value="12">Rod</option>
-                <option value="13">Yarda</option>
-                <option value="14">Pie</option>
-                <option value="15">Pulgada</option>
-                <option value="16">Micrometro</option>
+            <input id="valorM" type="number" class="valorUser">
+            <select id="medidaInicial" class="medidaInicial">
+                <option value="km">Kilómetro</option>
+                <option value="hm">Hectómetro</option>
+                <option value="dam">Decámetro</option>
+                <option value="m">Metro</option>
+                <option value="dm">Decímetro</option>
+                <option value="cm">Centímetro</option>
+                <option value="mm">Milímetro</option>
+                <option value="legua">Legua</option>
+                <option value="milla">Milla</option>
+                <option value="furlong">Furlong</option>
+                <option value="cadena">Cadena</option>
+                <option value="rod">Rod</option>
+                <option value="yarda">Yarda</option>
+                <option value="pie">Pie</option>
+                <option value="pulgada">Pulgada</option>
+                <option value="micrometro">Micrómetro</option>
             </select>
-            <input class="valorResultado" readonly>
-            <select class="medidaFinal">
-                <option value="1">Kilometro</option>
-                <option value="2">Hectometro</option>
-                <option value="3">Decametro</option>
-                <option value="4">Metro</option>
-                <option value="5">Decimetro</option>
-                <option value="6">Centimetro</option>
-                <option value="7">Milimetro</option>
-                <option value="8">Legua</option>
-                <option value="9">Milla</option>
-                <option value="10">Furlong</option>
-                <option value="11">Cadena</option>
-                <option value="12">Rod</option>
-                <option value="13">Yarda</option>
-                <option value="14">Pie</option>
-                <option value="15">Pulgada</option>
-                <option value="16">Micrometro</option>
+            <input id="resultM" class="valorResultado" readonly>
+            <select id="medidaFinal" class="medidaFinal">
+                <option value="km">Kilómetro</option>
+                <option value="hm">Hectómetro</option>
+                <option value="dam">Decámetro</option>
+                <option value="m">Metro</option>
+                <option value="dm">Decímetro</option>
+                <option value="cm">Centímetro</option>
+                <option value="mm">Milímetro</option>
+                <option value="legua">Legua</option>
+                <option value="milla">Milla</option>
+                <option value="furlong">Furlong</option>
+                <option value="cadena">Cadena</option>
+                <option value="rod">Rod</option>
+                <option value="yarda">Yarda</option>
+                <option value="pie">Pie</option>
+                <option value="pulgada">Pulgada</option>
+                <option value="micrometro">Micrómetro</option>
             </select>
             <button class="botonconv">Calcular</button>
         </div>
@@ -60,75 +60,76 @@
             <h1>Pesos</h1>
             <input type="number" class="valorUser">
             <select class="medidaInicial">
-                <option value="1">Kilogramo</option>
-                <option value="2">Hectogramo</option>
-                <option value="3">Decagramo</option>
-                <option value="4">Gramo</option>
-                <option value="5">Decigramo</option>
-                <option value="6">Centigramo</option>
-                <option value="7">Miligramo</option>
-                <option value="8">Libra</option>
-                <option value="9">Onza</option>
+                <option value="kg">Kilogramo</option>
+                <option value="hg">Hectogramo</option>
+                <option value="dag">Decagramo</option>
+                <option value="g">Gramo</option>
+                <option value="dg">Decigramo</option>
+                <option value="cg">Centigramo</option>
+                <option value="mg">Miligramo</option>
+                <option value="libra">Libra</option>
+                <option value="onza">Onza</option>
             </select>
-            <input class="valorResultado" readonly>
+            <input id="resultP" class="valorResultado" readonly>
             <select class="medidaFinal">
-                <option value="1">Kilogramo</option>
-                <option value="2">Hectogramo</option>
-                <option value="3">Decagramo</option>
-                <option value="4">Gramo</option>
-                <option value="5">Decigramo</option>
-                <option value="6">Centigramo</option>
-                <option value="7">Miligramo</option>
-                <option value="8">Libra</option>
-                <option value="9">Onza</option>
+                <option value="kg">Kilogramo</option>
+                <option value="hg">Hectogramo</option>
+                <option value="dag">Decagramo</option>
+                <option value="g">Gramo</option>
+                <option value="dg">Decigramo</option>
+                <option value="cg">Centigramo</option>
+                <option value="mg">Miligramo</option>
+                <option value="libra">Libra</option>
+                <option value="onza">Onza</option>
             </select>
-            <button class="botonconv">Calcular</button>
+            <button class="botonconv">Calcular</button>            
         </div>
         <div class="conttemperatura">
             <h1>Temperatura</h1>
             <input type="number" class="valorUser">
             <select class="medidaInicial">
-                <option value="1">Celsius</option>
-                <option value="2">Fahrenheit</option>
-                <option value="3">Kelvin</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
             </select>
-            <input class="valorResultado" readonly>
+            <input id="resultT" class="valorResultado" readonly>
             <select class="medidaFinal">
-                <option value="1">Celsius</option>
-                <option value="2">Fahrenheit</option>
-                <option value="3">Kelvin</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
             </select>
             <button class="botonconv">Calcular</button>
+            
         </div>
         <div class="contdinero">
             <h1>Dinero</h1>
             <input type="number" class="valorUser">
             <select class="medidaInicial">
-                <option value="1">Dolar (USD)</option>
-                <option value="2">Euro (EUR)</option>
-                <option value="3">Yen (JPY)</option>
-                <option value="4">Libra (GBP)</option>
-                <option value="5">Dolar (AUD)</option>
-                <option value="6">Dolar (CAD)</option>
-                <option value="7">Franco (CHF)</option>
-                <option value="8">Yuan (CNH)</option>
-                <option value="9">Dolar (HKD)</option>
-                <option value="10">Dolar (NZD)</option>
+                <option value="usd">Dólar (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="jpy">Yen (JPY)</option>
+                <option value="gbp">Libra (GBP)</option>
+                <option value="aud">Dólar (AUD)</option>
+                <option value="cad">Dólar (CAD)</option>
+                <option value="chf">Franco (CHF)</option>
+                <option value="cnh">Yuan (CNH)</option>
+                <option value="hkd">Dólar (HKD)</option>
+                <option value="nzd">Dólar (NZD)</option>
             </select>
-            <input class="valorResultado" readonly>
+            <input id="resultD" class="valorResultado" readonly>
             <select class="medidaFinal">
-                <option value="1">Dolar (USD)</option>
-                <option value="2">Euro (EUR)</option>
-                <option value="3">Yen (JPY)</option>
-                <option value="4">Libra (GBP)</option>
-                <option value="5">Dolar (AUD)</option>
-                <option value="6">Dolar (CAD)</option>
-                <option value="7">Franco (CHF)</option>
-                <option value="8">Yuan (CNH)</option>
-                <option value="9">Dolar (HKD)</option>
-                <option value="10">Dolar (NZD)</option>
+                <option value="usd">Dólar (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="jpy">Yen (JPY)</option>
+                <option value="gbp">Libra (GBP)</option>
+                <option value="aud">Dólar (AUD)</option>
+                <option value="cad">Dólar (CAD)</option>
+                <option value="chf">Franco (CHF)</option>
+                <option value="cnh">Yuan (CNH)</option>
+                <option value="hkd">Dólar (HKD)</option>
+                <option value="nzd">Dólar (NZD)</option>
             </select>
-            <button class="botonconv">Calcular</button>
+            <button class="botonconv">Calcular</button>            
         </div>
     </div>
     <div class="infoconv">
